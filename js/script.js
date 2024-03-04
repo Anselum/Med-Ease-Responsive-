@@ -62,3 +62,31 @@ window.addEventListener('scroll', () => {
 window.addEventListener('load', () => {
     window.scrollTo(0, 0);
 });
+
+
+
+// Intersection Observer
+
+let elements = document.querySelectorAll('.to-observe');
+
+const options = {
+    root: null,
+    threshold: 0,
+    rootMargin: "150px 200px 50px",
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, options);
+
+
+setTimeout(() => {
+    elements.forEach((element) => {
+        observer.observe(element);
+    });
+}, 500)

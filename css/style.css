@@ -552,3 +552,19 @@ span:hover~.circle,
 .circle {
     z-index: 1000;
 }
+
+
+
+/* Intersection Observer */
+
+
+.from-bottom {
+    transform: translate(0, 50px);
+    opacity: 0;
+}
+
+.fade-in {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.75s ease-in-out;
+}
