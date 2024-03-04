@@ -1,0 +1,354 @@
+@media (max-width: 1024px) {
+    header {
+        min-height: 60px;
+        margin-bottom: 50px;
+    }
+
+    header .btn {
+        display: block;
+    }
+
+    header .navbar {
+        min-width: 300px;
+        height: 100vh;
+        position: fixed;
+        padding: 40px 20px;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background: white;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+        transition: all 0.9s;
+    }
+
+    header .navbar.active2 {
+        right: 0;
+        transition: 0.9s;
+    }
+
+    header .navbar .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+
+    /* Hero Section */
+
+    .hero-section {
+        width: 100%;
+        padding: 90px var(--padding) 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section-left {
+        width: 100%;
+    }
+
+    .hero-section-left h1 {
+        font-size: 58px;
+        margin-bottom: 15px;
+    }
+
+    .hero-section-left h1 span {
+        color: var(--light-blue);
+    }
+
+    .hero-section-left p {
+        margin: auto;
+        width: 70%;
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .hero-section-left button {
+        margin-top: 30px;
+    }
+
+    .hero-section-right {
+        scale: 0.8;
+        z-index: -2;
+    }
+
+
+
+    /* About Section */
+
+    .about-section {
+        width: 85%;
+        margin-top: -120px;
+        margin-inline: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+
+    .about-div {
+        scale: 0.8;
+    }
+
+
+    .about-div:active {
+        transform: scale(1.1);
+        background-color: var(--light-blue);
+        color: white;
+    }
+
+    .about-div:active svg path {
+        fill: white;
+    }
+
+
+    /* Consultation section */
+
+    .consultation-section {
+        width: 100%;
+        padding: 5% var(--padding);
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .consult-left {
+        scale: 0.9;
+    }
+
+
+    .consult-left::before {
+        content: "";
+        width: 100%;
+        aspect-ratio: 1;
+        position: absolute;
+        inset: 50%;
+        translate: -50% -50%;
+        background-color: black;
+        background: linear-gradient(-35deg, white 40%, #2aa6ff8f);
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    .consult-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .consult-right-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .consult-right-text h1 {
+        font-size: 58px;
+    }
+
+
+    .consult-right-text p {
+        margin: auto;
+        width: 60%;
+    }
+    /* Consultation section */
+
+    .consultation-section {
+        width: 100%;
+        padding: 5% var(--padding);
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .consult-left {
+        scale: 0.9;
+    }
+
+
+    .consult-left::before {
+        content: "";
+        width: 100%;
+        aspect-ratio: 1;
+        position: absolute;
+        inset: 50%;
+        translate: -50% -50%;
+        background-color: black;
+        background: linear-gradient(-35deg, white 40%, #2aa6ff8f);
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    .consult-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .consult-right-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .consult-right-text h1 {
+        font-size: 58px;
+    }
+
+
+    .consult-right-text p {
+        margin: auto;
+        width: 60%;
+    }
+
+    /* Testimonial */
+
+    .testimonials-section {
+        width: 80%;
+        min-height: 60vh;
+        margin-inline: auto;
+    }
+
+    .testimonials-section h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 52px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .testimonials-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial-details {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 2% 5% 1%;
+    }
+
+    .testimonial-details img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .testimonial-para {
+        width: 100%;
+        font-size: 14px;
+        padding: 0% 3% 2%;
+    }
+
+    .testimonials-right {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .testimonial-right-details:active {
+        transform: scale(1.1);
+        background-color: var(--light-blue);
+        color: white;
+    }
+
+
+    /* Contact Section */
+
+    .contact-section {
+        width: 90%;
+        padding: 10% var(--padding) 4%;
+        gap: 50px;
+    }
+
+    .contact-section>h3 {
+        width: 100%;
+        font-size: 75px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .contact {
+        width: 90%;
+        display: flex;
+        align-items: start;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .contact-left {
+        margin: 0 auto;
+    }
+
+    .contact-left h3 {
+        width: 100%;
+        font-size: 42px;
+        text-align: center;
+        margin-top: 5px;
+        line-height: 100%;
+    }
+
+    .contact-left span {
+        color: var(--light-blue);
+    }
+
+    .form-container {
+        width: 300px;
+        margin: 40px auto;
+
+    }
+
+    button[type="submit"]:active {
+        background-color: #2AA8FF;
+        color: white;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        width: 100%;
+        padding: 2% 3%;
+    }
+
+    .footer-1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .footer-1 .navbar {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: 12px;
+        color: var(--gray);
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+
+
+}
