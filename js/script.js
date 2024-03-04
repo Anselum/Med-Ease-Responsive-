@@ -3,11 +3,11 @@ let menus_btn = document.querySelector(".menu-btn");
 let close_btn = document.querySelector(".close-btn");
 
 menus_btn.addEventListener("click", function () {
-  menus.classList.add("active2");
+    menus.classList.add("active2");
 });
 
 close_btn.addEventListener("click", function () {
-  menus.classList.remove("active2");
+    menus.classList.remove("active2");
 });
 
 
@@ -31,7 +31,7 @@ window.addEventListener("mousemove", (e) => {
     mouse.y = e.y;
 });
 
-const speed = 0.175;
+const speed = 0.075;
 
 const tick = () => {
     circle.x += (mouse.x - circle.x) * speed;

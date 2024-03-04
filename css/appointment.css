@@ -134,5 +134,8 @@ textarea {
         color: white;
     }
 
+    .circle {
+        display: none;
+    }
 
 }

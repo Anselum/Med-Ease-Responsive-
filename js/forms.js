@@ -28,6 +28,7 @@ function ContactForm() {
         emailjs.send(serviceID, contact_templateID, contact_param).then(
             (response) => {
                 alert("Success!");
+                window.location = 'index.html';
             },
             (error) => {
                 alert("Failed!");
@@ -52,6 +53,7 @@ function AppointmentForm() {
         emailjs.send(serviceID, contact_templateID, appointment_param).then(
             (response) => {
                 alert("Success!");
+                window.location = 'index.html';
             },
             (error) => {
                 alert("Failed!");
